@@ -1,4 +1,5 @@
 ﻿using System;
+using Strategy_Design_Pattern.BO;
 
 namespace Strategy_Design_Pattern
 {
@@ -7,14 +8,14 @@ namespace Strategy_Design_Pattern
     static void Main(string[] args)
     {
       Vehicle bus= new Bus();
-      Console.WriteLine(bus.GetType());
+      Console.WriteLine(bus.GetType().Name);
       bus.PerfomSwim();
       bus.PerformFly();
 
        
 
       Vehicle ship= new Ship();
-      Console.WriteLine(ship.GetType());
+      Console.WriteLine(ship.GetType().Name);
       ship.PerfomSwim();
       ship.PerformFly();
 

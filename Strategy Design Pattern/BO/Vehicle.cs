@@ -1,4 +1,4 @@
-﻿namespace Strategy_Design_Pattern
+﻿namespace Strategy_Design_Pattern.BO
 {
   public abstract class Vehicle
   {
@@ -19,26 +19,6 @@
       SwimBehaviour.Swim();
     }
 
-  }
-
-
-  public class Bus : Vehicle
-  {
-    public Bus()
-    {
-      FlyBehaviour = new NotFly();
-      SwimBehaviour = new NotSwim();
-    }
-
-  }
-
-  public class Ship : Vehicle
-  {
-    public Ship()
-    {
-      FlyBehaviour = new FlyWithWings();
-      SwimBehaviour = new CanSwim();
-    }
   }
 
 }
