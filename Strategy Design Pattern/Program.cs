@@ -11,7 +11,7 @@ namespace Strategy_Design_Pattern
       bus.PerfomSwim();
       bus.PerformFly();
 
-
+       
 
       Vehicle ship= new Ship();
       Console.WriteLine(ship.GetType());
